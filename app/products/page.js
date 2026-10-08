@@ -1,6 +1,14 @@
 import { Suspense } from "react";
 import ProductCatalog from "@/components/ProductCatalog";
 
+export const metadata = {
+  title: "Laboratory Products & Diagnostic Supplies",
+  description:
+    "Browse Swift Diagnostics products for hospitals, pathology labs and research teams, including diagnostic consumables, laboratory equipment, molecular biology kits, reagents and test kits.",
+  alternates: { canonical: "/products" },
+  openGraph: { url: "/products" },
+};
+
 export default function ProductsPage({ searchParams }) {
   const initialCategory = typeof searchParams?.category === "string" ? searchParams.category : "All";
 

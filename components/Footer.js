@@ -28,10 +28,10 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
           <div>
             <Image
-              src="/images/logo/swiftdiagnostics-logo.svg"
+              src="/logo-logo.webp"
               alt="Swift Diagnostics logo"
-              width={220}
-              height={64}
+              width={1411}
+              height={299}
               className="h-12 w-auto"
             />
             <p className="mt-5 max-w-md text-sm leading-7 text-slate-300">

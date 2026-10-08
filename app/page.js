@@ -11,9 +11,11 @@ import TrustBar from "@/components/TrustBar";
 import { productCategories, products } from "@/data/products";
 
 export const metadata = {
-  title: "Swift Diagnostics | Diagnostic Equipment & Laboratory Supplies India",
+  title: "Diagnostic Equipment & Laboratory Supplies in India",
   description:
     "Swift Diagnostics supplies diagnostic laboratory equipment, blood collection tubes, centrifuges, microtomes, RNA/DNA kits, ELISA kits, dialysis equipment and histopathology reagents across India.",
+  alternates: { canonical: "/" },
+  openGraph: { url: "/" },
 };
 
 const showcaseProducts = products.slice(0, 9);

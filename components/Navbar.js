@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, PhoneCall, X } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -31,15 +32,14 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" aria-label="Swift Diagnostics home">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-700 text-sm font-black tracking-[0.18em] text-white shadow-lg shadow-sky-700/20 sm:h-11 sm:w-11">
-            SD
-          </div>
-          <div className="leading-none">
-            <div className="text-base font-black tracking-[0.18em] text-slate-900 sm:text-lg">SWIFT</div>
-            <div className="mt-1 text-[9px] font-semibold uppercase tracking-[0.28em] text-sky-700 sm:text-[10px]">
-              Diagnostics
-            </div>
-          </div>
+          <Image
+            src="/logo-logo.webp"
+            alt="Swift Diagnostics"
+            width={1411}
+            height={299}
+            priority
+            className="h-9 w-auto brightness-0 sm:h-10"
+          />
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">

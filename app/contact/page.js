@@ -3,8 +3,10 @@ import { Clock3, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata = {
-  title: "Contact Swift Diagnostics | Enquiry & Institutional Procurement",
+  title: "Contact & Institutional Procurement",
   description: "Contact Swift Diagnostics for product enquiries, laboratory supply requirements, and institutional procurement support across India.",
+  alternates: { canonical: "/contact" },
+  openGraph: { url: "/contact" },
 };
 
 export default function ContactPage({ searchParams }) {

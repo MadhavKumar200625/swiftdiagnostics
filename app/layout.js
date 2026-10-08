@@ -15,23 +15,60 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://www.swiftdiagnostics.co.in"),
+  applicationName: "Swift Diagnostics",
   title: {
-    default: "Swift Diagnostics | Diagnostic Equipment & Laboratory Supplies India",
+    default: "Diagnostic Equipment & Laboratory Supplies in India",
     template: "%s | Swift Diagnostics",
   },
   description:
     "Swift Diagnostics supplies diagnostic laboratory equipment, blood collection tubes, centrifuges, microtomes, molecular biology kits, ELISA kits and histopathology reagents across India.",
+  alternates: {
+    canonical: "/",
+  },
+  keywords: [
+    "diagnostic equipment India",
+    "laboratory supplies India",
+    "pathology lab equipment",
+    "blood collection tubes",
+    "laboratory reagents",
+    "Swift Diagnostics",
+  ],
+  category: "Healthcare and laboratory supplies",
+  creator: "Swift Diagnostics",
+  publisher: "Swift Diagnostics",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     title: "Swift Diagnostics | Diagnostic Equipment & Laboratory Supplies India",
     description:
       "India's Trusted Diagnostics Partner for hospital, pathology and research laboratory supply.",
     type: "website",
     locale: "en_IN",
+    siteName: "Swift Diagnostics",
+    url: "/",
+    images: [
+      {
+        url: "/swift-diagnostics-social.png",
+        width: 1200,
+        height: 630,
+        alt: "Swift Diagnostics",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Swift Diagnostics",
     description: "India's Trusted Diagnostics Partner",
+    images: ["/swift-diagnostics-social.png"],
   },
 };
 
