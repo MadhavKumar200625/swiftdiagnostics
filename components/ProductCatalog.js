@@ -99,7 +99,7 @@ export default function ProductCatalog({ initialCategory = "All" }) {
                     <div className="overflow-hidden rounded-[1.1rem] border border-slate-100 bg-slate-50">
                       <div className="relative h-48 overflow-hidden">
                         <Image
-                          src={category.image}
+                          src={product.image}
                           alt={product.name}
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
